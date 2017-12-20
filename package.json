@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/johnfliu818/standard-encryption/issues"
   },
-  "homepage": "https://github.com/johnfliu818/standard-encryption#readme"
+  "homepage": "https://github.com/johnfliu818/standard-encryption#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
 }

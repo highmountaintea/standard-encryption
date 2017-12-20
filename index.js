@@ -23,6 +23,10 @@ function encrypt2012(site, city, pass) {
 }
 
 // sample usage via console
-if (process.argv.length > 4) {
+if (process != null && process.argv.length > 4) {
   console.log(encrypt2012(process.argv[2], process.argv[3], process.argv[4]));
 }
+
+exports.encrypt2009 = encrypt2009;
+exports.encrypt2009b = encrypt2009b;
+exports.encrypt2012 = encrypt2012;
