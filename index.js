@@ -1,6 +1,6 @@
 var stdenc2009 = require('./standard_encryption_2009');
 var stdenc2012 = require('./standard_encryption_2012');
-
+var aes = require('./aes');
 
 function encrypt2009(site, city, pass) {
   // capitalize city
@@ -30,3 +30,4 @@ if (process != null && process.argv.length > 4) {
 exports.encrypt2009 = encrypt2009;
 exports.encrypt2009b = encrypt2009b;
 exports.encrypt2012 = encrypt2012;
+exports.aes = aes;
