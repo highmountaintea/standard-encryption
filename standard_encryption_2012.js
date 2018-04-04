@@ -3,6 +3,7 @@ var encoder = require('./coolimage_encoder');
 
 exports.unihash = unihash;
 exports.calc2012 = calc2012;
+exports.calc2012full = calc2012full;
 
 function hash(str) {
 	var binarray = sha256.sha(str + '@coolimage.com', true);
@@ -22,4 +23,10 @@ function calc2012(unihash, site_domain) {
 	var raw_sitepass = hash(unihash + site_domain);
 	// replace the 3 special chars with 0, because numbers are harder to come by
 	return raw_sitepass.replace('+', '0').replace('/', '0').replace('=', '0').substr(0, 16);
+}
+
+function calc2012full(unihash, site_domain) {
+	var raw_sitepass = hash(unihash + site_domain);
+	// replace the 3 special chars with 0, because numbers are harder to come by
+	return raw_sitepass.replace('+', '0').replace('/', '0').replace('=', '0').substr(0, 40);
 }
