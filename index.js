@@ -23,9 +23,9 @@ function encrypt2012(site, city, pass) {
   return str;
 }
 
-function encrypt2012full(site, city, pass) {
+function encrypt2012new(site, city, pass) {
   var unihash = stdenc2012.unihash(city, pass); //city,pass (city in lowercase)
-  var str = stdenc2012.calc2012full(unihash, site.toLowerCase());
+  var str = stdenc2012.calc2012new(unihash, site.toLowerCase());
   return str;
 }
 
