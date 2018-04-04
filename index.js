@@ -37,6 +37,6 @@ if (process != null && process.argv.length > 4) {
 exports.encrypt2009 = encrypt2009;
 exports.encrypt2009b = encrypt2009b;
 exports.encrypt2012 = encrypt2012;
-exports.encrypt2012full = encrypt2012full;
+exports.encrypt2012new = encrypt2012new;
 exports.aes = aes;
 exports.sha256 = sha256.sha;
