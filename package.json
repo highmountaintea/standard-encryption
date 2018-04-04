@@ -1,6 +1,6 @@
 {
   "name": "standard-encryption",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Standard Encryption",
   "main": "index.js",
   "scripts": {

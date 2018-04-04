@@ -28,5 +28,5 @@ function calc2012(unihash, site_domain) {
 function calc2012full(unihash, site_domain) {
 	var raw_sitepass = hash(unihash + site_domain);
 	// replace the 3 special chars with 0, because numbers are harder to come by
-	return raw_sitepass.replace('+', '0').replace('/', '0').replace('=', '0').substr(0, 40);
+	return raw_sitepass.replace(/[+\/=]/g, '0').substr(0, 40);
 }
