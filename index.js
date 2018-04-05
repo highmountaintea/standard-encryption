@@ -40,3 +40,5 @@ exports.encrypt2012 = encrypt2012;
 exports.encrypt2012new = encrypt2012new;
 exports.aes = aes;
 exports.sha256 = sha256.sha;
+exports.stdenc2009 = stdenc2009;
+exports.stdenc2012 = stdenc2012;
