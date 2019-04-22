@@ -12,8 +12,6 @@ module.exports = {
   module: {
     rules: [
     ],
-    loaders: [
-    ],
   },
   externals: {
   },
